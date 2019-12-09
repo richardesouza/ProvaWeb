@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    font-family: Gill Sans Extrabold, sans-serif;
+    background-color: #d3d3d3;
+    padding: 50px;
+}
+h1 {
+    text-align: center;
+    background-color: white;
+}
+img {
+    float: right;
+    margin: 20px;
+}
+#primeiro {
+    text-align: justify;
+}
+#lista_externa {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png
+    background-image: url("C:\Users\Richarde\Desktop\ProvaWeb\Exercio 2\Fotos");
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: #87cefa;
+}

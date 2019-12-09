@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercio 01</title>
+
+    <script>
+        var botao = document.getElementById("btn");
+
+        window.onload = function () {
+            alert('Boas Vindas!');
+        };
+
+        function adDiv() {
+            let texto = document.getElementById("texto").value;
+            let div = document.getElementById("div");
+
+            div.innerText = texto;
+        };
+
+        function adDiv2() {
+            let texto = document.getElementById("textSelect").value;
+            let div = document.getElementById("div2");
+
+            div.innerText = texto;
+        };
+    </script>
+</head>
+
+<body>
+    <input type="text" name="name" id="texto" />
+    <button id="btn" onclick="adDiv()">Adicionar</button> <br>
+
+    <br />
+    <div id="div"></div>
+
+    <br />
+    <br />
+
+    <select id="textSelect" onchange="adDiv2()">
+        <option value="Carro">Carro</option>
+        <option value="Moto">Moto</option>
+        <option value="Bicicleta">Bicicleta</option>
+        <option value="Onibus">Onibus</option>
+    </select>
+
+    <br />
+    <div id="div2"></div>
+</body>
+
+</html>

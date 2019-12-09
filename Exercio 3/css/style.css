@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: black;
+font-size: 15px;
+}
+
+h1{
+display: block;
+text-align: center;
+background-color: rgb(180, 198, 201);    
+width: 800px;
+margin: 0 auto;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
+}
+
+#formulario{
+text-align: left;
+display: block;
+background-color:rgb(180, 198, 201);
+padding: 10px;
+margin: 0 auto;
+width: 800px;
+border-radius: 5px;
+}
+
+fieldset{
+    padding: 10px;
+}
+
+button{
+    padding: 5px;
+    margin: 20px 20px 10px 20px;
+}
+
+#botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    text-align: right;
+    display: block;
+    width: 180px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+input, select{
+    margin-top: 3px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercio 3</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script>
+        function validar() {
+            if (document.formulario.senha.value == '' | document.formulario.login.value == '') {
+                alert("Por favor, preencha o campo de login e senha.");
+                return
+            }
+            else {
+                alert("Cadastro Efetuado com sucesso");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Formulários - Coleta de Informações Pessoais</h1>
+    <form name="formulario" action="#">
+        <div id="formulario">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label>Nome Completo:</label>
+                <input type="text" size="20"><br />
+                <label>E-Mail:</label>
+                <input type="email" size="20"><br />
+                <label>Data de Nascimento:</label>
+                <input type="date" size="10"><br />
+                <label>Login:</label>
+                <input type="text" size="10" name="login" />*<br />
+                <label>Senha:</label>
+                <input type="password" size="10" name="senha" />*<br />
+                <label>Estado:</label>
+                <select size="1">
+                    <option>Goiania</option>
+                    <option>Distrito Federal</option>
+                    <option>Santa Catarina</option>
+                    <option>Fortaleza</option>
+                </select>
+                <br /><br />
+                Faixa Etária:<br />
+                <input type="radio" id="menor" name="idade" value="menor">Menor ou Igual a 18 anos<br />
+                <input type="radio" id="maior" name="idade" value="maior">Maior de 18 anos<br />
+            </fieldset>
+            <div id="botoes">
+                <button type="submit" onclick="">Limpar Formulário</button>
+                <button type="submit" onclick="return validar()">Efetuar Cadastro</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
